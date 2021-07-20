@@ -1,0 +1,100 @@
+@media (max-width: 681px) {
+  @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500&display=swap");
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: #f0f2f2;
+  }
+  .upper_link,
+  .caption {
+    font-size: calc(10px + 26 * (100vw / 1280));
+    font-family: Yantramanav, sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: white;
+    letter-spacing: -0.02em;
+    margin-top: 5px;
+  }
+  .bigger_font,
+  .caption.bigger_font {
+    font-size: calc(12px + 26 * (100vw / 1280));
+  }
+  .container {
+    max-width: 681px;
+    margin: 0 auto;
+  }
+  .grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 100%);
+    grid-gap: 3px;
+    grid-template-areas: "one" "two" "three" "four" "five" "six" "seven";
+    min-height: 98vh;
+    padding: 1vh;
+    justify-content: center;
+  }
+  .main_link,
+  .upper_link {
+    text-decoration: none;
+  }
+  .upper_link {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+  }
+  div.one {
+    grid-area: one;
+  }
+  div.two {
+    grid-area: two;
+  }
+  div.three {
+    grid-area: three;
+  }
+  div.four {
+    grid-area: four;
+  }
+  div.five {
+    grid-area: five;
+  }
+  div.six {
+    grid-area: six;
+  }
+  div.seven {
+    grid-area: seven;
+  }
+  div.one {
+    background: url("../images/1.jpg");
+  }
+  div.two {
+    background: url("../images/2.jpg");
+  }
+  div.three {
+    background: url("../images/3.jpg");
+  }
+  div.four {
+    background: url("../images/4.jpg");
+  }
+  div.five {
+    background: url("../images/5.jpg");
+  }
+  div.six {
+    background: url("../images/6.jpg");
+  }
+  div.seven {
+    background: url("../images/7.jpg");
+  }
+  div.card {
+    background-size: cover;
+    background-position: center;
+  }
+  .text {
+    position: relative;
+    z-index: 1;
+    top: 80%;
+    text-align: center;
+  }
+  .block {
+    display: none;
+  }
+}

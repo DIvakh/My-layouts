@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@font-face {
+  src: url("OpenSans.woff") format("woff"),
+    url("OpenSans.woff2") format("woff2");
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("OpenSans-Bold.woff") format("woff"),
+    url("OpenSans-Bold.woff2") format("woff2");
+}

@@ -1,0 +1,195 @@
+@import url("mobile.css");
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+}
+body {
+  background-color: #f0f2f2;
+  box-sizing: border-box;
+}
+
+a,
+h2,
+div {
+  font-family: Yantramanav, sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing: -0.02em;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-template-areas: "one four four six" "two four four six" "three three five seven";
+  min-height: 98vh;
+  padding: 1vh;
+}
+a {
+  text-decoration: none;
+}
+.upper_link {
+  font-size: 12.24px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+}
+.bigger_font {
+  font-size: 14.4px;
+}
+.caption {
+  font-size: 21.42px;
+}
+.caption.bigger_font {
+  font-size: 37.8px;
+}
+div.one {
+  grid-area: one;
+  min-height: 285px;
+  background-image: url("../images/1.jpg");
+}
+div.two {
+  grid-area: two;
+  background-image: url("../images/2.jpg");
+}
+div.three {
+  grid-area: three;
+  background-image: url("../images/3.jpg");
+}
+div.four {
+  grid-area: four;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../images/4.jpg");
+}
+div.five {
+  grid-area: five;
+  background-image: url("../images/5.jpg");
+}
+div.six {
+  grid-area: six;
+  background-image: url("../images/6.jpg");
+}
+div.seven {
+  grid-area: seven;
+  background-image: url("../images/7.jpg");
+}
+div.card {
+  background-size: cover;
+  background-position: center;
+}
+.block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      transparent 100%
+    ),
+    linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.card_link {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+.card {
+  position: relative;
+  cursor: pointer;
+}
+.card:hover .block {
+  opacity: 1;
+}
+.text {
+  position: relative;
+  z-index: 1;
+  top: 70%;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 50%;
+}
+.caption {
+  transition: color 0.3s ease-in-out;
+}
+.caption:hover {
+  color: #0f70e8;
+}
+.upper_string {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.themify,
+.date,
+.comment_count,
+.like_count,
+.icons {
+  font-size: 12.24px;
+  text-transform: uppercase;
+  align-self: center;
+  padding-top: 6%;
+}
+.smile {
+  max-width: 32px;
+  padding-top: 6%;
+  padding-left: 6%;
+  padding-right: 10px;
+  align-self: center;
+}
+.themify:hover,
+.comment_count:hover,
+.like_count:hover {
+  text-decoration: underline;
+}
+.comment_count:active,
+.like_count:active {
+  border: 1px dotted white;
+}
+.date,
+.icons {
+  padding-left: 5px;
+}
+.comment_count,
+.like_count {
+  padding: 0 4px;
+}
+.far {
+  color: white;
+  font-size: 13.24px;
+}
+.icons {
+  flex-basis: 35%;
+  margin-left: auto;
+  padding-top: 0;
+}
+.icons.big {
+  padding-top: 6%;
+  padding-right: 6%;
+  flex-basis: auto;
+}
+.big {
+  font-size: 14.4px;
+}
+.date {
+  margin-right: 20px;
+}
+span {
+  padding-left: 5px;
+}
